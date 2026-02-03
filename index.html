@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fakta o rybách</title>
+  <title>Psí fakta</title>
 
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
@@ -11,16 +11,20 @@
 
 <body>
   <main class="wrap">
-    <h1>Zajímavá fakta o rybách</h1>
+    <h1>Zajímavá fakta o psech</h1>
 
-    <section class="card">
+    <section class="card" aria-live="polite">
       <p class="label">Náhodný fakt:</p>
-      <p id="fact" class="fact">Klikni na „Nový fakt“</p>
 
-      <button id="newFactBtn" class="btn" type="button">Nový fakt</button>
+      <p id="fact" class="fact">Načítání faktu...</p>
 
-      <p id="error" class="error"></p>
+      <div class="actions">
+        <button id="newFactBtn" class="btn" type="button">Nový fakt</button>
+      </div>
+
+      <p id="error" class="error" role="status"></p>
     </section>
+
   </main>
 </body>
 </html>
